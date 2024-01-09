@@ -1,13 +1,18 @@
-let score = JSON.parse(localStorage.getItem('score'));
+let score = JSON.parse(localStorage.getItem('score')) || { // any true item will execute
+  // say if there is no storage we can set new obj
+  wins: 0,
+  losses: 0,
+  ties: 0
+};
 
 //checking if score is null
 // can check as if score === null or !score same thing
-if(!score){
-  score = {
-    wins: 0,
-    losses: 0,
-    ties: 0
-  }
+// if(!score){
+//   score = {
+//     wins: 0,
+//     losses: 0,
+//     ties: 0
+//   }
 
 }
 
