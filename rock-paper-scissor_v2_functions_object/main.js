@@ -1,4 +1,5 @@
-let score = JSON.parse(localStorage.getItem('score')) || { // any true item will execute
+let score = JSON.parse(localStorage.getItem('score')) || { 
+  // any true item will execute
   // say if there is no storage we can set new obj
   wins: 0,
   losses: 0,
@@ -14,7 +15,7 @@ let score = JSON.parse(localStorage.getItem('score')) || { // any true item will
 //     ties: 0
 //   }
 
-}
+
 
 console.log();
 
