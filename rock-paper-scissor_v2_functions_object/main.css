@@ -10,12 +10,12 @@ body{
   font-size: 1.2rem;
 }
 header{
-
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 0.5rem;
   box-shadow: 2px 2px 2px #eae4e4;
   display: grid;
-  grid-template-columns: repeat(1,500px);
-  /* grid-template-rows: repeat(2, 1fr); */
+  grid-template-columns: repeat(1, 200px);
   grid-gap: 0.5rem;
   justify-content: center;
   align-items: center;
