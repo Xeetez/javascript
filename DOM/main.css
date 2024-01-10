@@ -1,0 +1,15 @@
+/*
+author: Kshitiz Paudel
+Date: 10 Jan 24
+*/
+button{
+  color: whitesmoke;
+  background-color: blue;
+  border: none;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+}
+
+button:hover, button:focus{
+  box-shadow: 1px 2px 2px rgb(24, 27, 130);
+}

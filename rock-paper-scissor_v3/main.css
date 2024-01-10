@@ -63,8 +63,9 @@ article {
   
 }
 
-article p{
+section p{
   font-size: 1.4rem;
+  text-align: center;
 }
 h1,h4{
   text-align: center;
