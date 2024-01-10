@@ -2,14 +2,46 @@
 author: Kshitiz Paudel
 Date: 10 Jan 24
 */
+header{
+  max-width: 1000px;
+  margin: 5px auto;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 2px #ae8c8c;
+  display: grid;
+  grid-template-columns: repeat(1, 200px);
+  grid-gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background: linear-gradient(to right, rgb(236, 247, 246), whitesmoke);
+}
+header p{
+  text-align: center;
+}
+main{
+  max-width: 1000px;
+  margin: 5px auto;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 2px #ae8c8c;
+  background: linear-gradient(to right, rgb(236, 247, 246), whitesmoke);
+}
+
+main p{
+  text-align: left;
+  margin: 0.5rem 0;
+}
+
 button{
   color: whitesmoke;
   background-color: blue;
   border: none;
   padding: 0.2rem 0.4rem;
   border-radius: 0.2rem;
+  margin: 0.2rem;
 }
 
 button:hover, button:focus{
   box-shadow: 1px 2px 2px rgb(24, 27, 130);
 }
+
+
