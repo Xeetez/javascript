@@ -2,34 +2,33 @@
 author: Kshitiz Paudel
 Date: 10 Jan 24
 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
 header{
   max-width: 1000px;
   margin: 5px auto;
   padding: 0.5rem;
   box-shadow: 2px 2px 2px #ae8c8c;
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(1, 200px);
   grid-gap: 0.5rem;
   justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
+  align-items: center; */
+  /* flex-wrap: nowrap; */
   background: linear-gradient(to right, rgb(236, 247, 246), whitesmoke);
 }
-header p{
-  text-align: center;
-}
+
 main{
   max-width: 1000px;
   margin: 5px auto;
   padding: 0.5rem;
-  box-shadow: 2px 2px 2px #ae8c8c;
-  background: linear-gradient(to right, rgb(236, 247, 246), whitesmoke);
+  box-shadow: 2px 2px 1px #f6d3d3;
+  background: linear-gradient(to left, rgb(236, 247, 246), rgb(232, 158, 158));
 }
 
-main p{
-  text-align: left;
-  margin: 0.5rem 0;
-}
 
 button{
   color: whitesmoke;
@@ -44,4 +43,31 @@ button:hover, button:focus{
   box-shadow: 1px 2px 2px rgb(24, 27, 130);
 }
 
+.subscribe-button{
+  background-color: black;
+  border-radius: 1.2rem;
+  padding: 0.4rem 0.8rem;
+  opacity: 0.9;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.is-subscribed{
+  background-color: gray;
+  color: black;
+}
+
+.calculate-btn{
+  background-color: green;
+  font-size: 15px;
+  padding: 4.5px 7px;
+}
+
+.cost-input{
+  font-size: 15px;
+  padding: 3.5px;
+  font-weight: 200;
+  /* box-shadow:  1px 1px rgb(126, 128, 193); */
+  border: none;
+}
 

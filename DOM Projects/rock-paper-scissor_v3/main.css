@@ -1,0 +1,138 @@
+body{
+  color: rgb(40, 5, 5);
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-size: 10px;
+  background: linear-gradient(to right, whitesmoke, rgb(190, 228, 228));
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  
+}
+header{
+  
+  max-width: 1000px;
+  margin: 5px auto;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 2px #ae8c8c;
+  display: grid;
+  grid-template-columns: repeat(1, 200px);
+  grid-gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background: linear-gradient(to right, rgb(236, 247, 246), whitesmoke);
+
+}
+section{
+  padding: 0.2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+
+}
+article {
+  background: linear-gradient(to right, rgb(255, 255, 255),rgb(171, 171, 181));
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+  line-height: 1.5rem;
+  box-shadow: 5px 5px 2px #dad1d1;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  background-color: rgb(255, 255, 255);
+  /* opacity: 0.9; */
+  border-radius: 5px;
+  white-space: wrap;
+  /* height: 200px; */
+  height: 200px;
+  overflow: hidden;
+  -webkit-transition: height 2s ease-in-out;
+  transition: height 2s ease-in-out;
+}
+
+ article:hover{
+ height: 1050px;
+  
+}
+
+section p{
+  font-size: 1.4rem;
+  text-align: center;
+}
+h1,h4{
+  text-align: center;
+}
+
+@media screen and (max-width: 830px) {
+
+  *{
+    font-size: 8px;
+
+  }
+  header, article {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  article{
+    height: 700px;
+  }
+
+  h1, h4{
+    text-align: center;
+  
+  }
+
+  section{
+    grid-template-columns: 0.7fr;
+    
+  }
+ 
+}
+
+
+
+
+
+ button{
+  cursor:pointer;
+  padding: 0.2rem;
+  background-color: rgba(113, 126, 201, 0.237);
+  color: black;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4.5px #e2e5e7;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 0.5px rgb(215, 198, 198);
+ }
+
+input[type = "text"]{
+  border: 0.5px solid rgb(97, 163, 184);
+  padding: 0.1rem;
+  height: 1.3rem;
+  border-radius: 2px;
+}
+.yellow-button{
+  background-color: yellow;
+  color: black;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4.5px #888888;
+}
+
+.blue-button{
+  background-color: blue;
+  color: whitesmoke;
+  border: none;
+  border-radius: 2px;
+  box-shadow:  2px 2px 4.5px #888888;
+  
+}

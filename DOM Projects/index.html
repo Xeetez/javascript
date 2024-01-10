@@ -9,19 +9,20 @@
 <body>
   <header>
     <p>YouTube Subscribe Button</p>
-     <button  onclick="subscribe();" class="js-subscribe-button">Subscribe</button>
+     <button  onclick="subscribe();" class="js-subscribe-button subscribe-button">Subscribe</button>
   </header>
   <main>
     <p>Amazon Shipping Calculator</p>
-    <input type="number" placeholder="Cost of Order" class="js-cost-input" onkeydown="     
+    <p>Orders under $40 = +$10 shipping</p>
+    <p>Orders over $40 = FREE shipping</p>
+    <input type="number" placeholder="Cost of Order" class="js-cost-input cost-input" onkeydown="     
     handleCostKeydown(event);
     ">
     <button onclick="
       calculateTotal();
-    ">Calculate</button>
+    " class="calculate-btn">Calculate</button>
     <p class="js-total-cost"></p>
-    <!-- <p>Orders under $40 = +$10 shipping</p>
-    <p>Orders over $40 = FREE shipping</p> -->
+    
   </main>
   
 <script src="main.js">
