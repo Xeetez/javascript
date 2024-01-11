@@ -1,0 +1,81 @@
+/*
+author: Kshitiz Paudel
+Date: 10 Jan 24
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+header{
+  max-width: 1000px;
+  margin: 5px auto;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 2px #ae8c8c;
+  /* display: grid;
+  grid-template-columns: repeat(1, 200px);
+  grid-gap: 0.5rem;
+  justify-content: center;
+  align-items: center; */
+  /* flex-wrap: nowrap; */
+  background: linear-gradient(to right, rgb(236, 247, 246), whitesmoke);
+}
+
+.todo-grid, .todo-input-grid{
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+  
+}
+
+.todo-input-grid{
+  margin-bottom: 10px;
+  align-items: stretch;
+}
+
+.name-input, .due-date-input{
+  font-size: 15px;
+  padding: 6px;
+}
+.add-todo-btn{
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.delete-todo-btn{
+  background-color: darkred;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+button:hover, button:focus{
+  box-shadow: 1px 2px 2px rgb(24, 27, 130);
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  border: 2px solid red;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px rgb(165, 141, 141);
+  display: inline-block;
+
+}
+
+a:hover{
+  background-color: green;
+  color: white;
+  transform: scale(1.05);
+ 
+ 
+  
+}

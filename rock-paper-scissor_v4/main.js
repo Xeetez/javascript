@@ -29,6 +29,43 @@ function resetScore(){
 
 }
 
+/*
+ =>variable global for storing setIterval and autoplaying status so that we can use them to stop if user want to stop
+ => Another reason to put these variables outside is because, setinterval calls the function autoplay function every time so these variable if stored inside cannot be chaged inside
+*/
+let isAutoPlaying = false;
+  let intervalId; 
+// autoplays when button autoplay is clicked
+function autoPlay(){
+  
+  // changing auto play button
+  //storing button first in variable
+  const autoPlayBtn = document.querySelector('.auto-play-js');
+  // auto play was off befor, not it is clicked
+  //check if clicked autoplay for first time
+
+  if(!isAutoPlaying){
+  // storing interval so that we can stop it if user wants to stop
+    
+    intervalId = setInterval(()=> {
+      let computerMove = pickComputerMove();
+      playGame(computerMove);
+    },1000);
+    //changing button as stop playing
+    autoPlayBtn.innerHTML = 'Stop Playing';
+    isAutoPlaying = true;
+  }else{
+    // stop auto play
+    clearInterval(intervalId);
+    isAutoPlaying = false
+    autoPlayBtn.innerHTML = 'Auto Play';
+  }
+
+
+  
+ 
+}
+
 function playGame(playerMove){
   const computerMove = pickComputerMove();
   let result = '';
@@ -47,8 +84,10 @@ function playGame(playerMove){
   }
 
   updateResult(playerMove, computerMove, result);
+  return result;
   
 }
+
 function updateResult(playerMove, computerMove, result){
   if(result === 'You Win'){
     score.wins += 1;
