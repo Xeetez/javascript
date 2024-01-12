@@ -14,8 +14,25 @@ let score = JSON.parse(localStorage.getItem('score')) || {
   ties: 0
 };
 
-updateScoreElement();
 
+//advaced function for rock button
+
+document.querySelector('.js-rock-button').
+  addEventListener('click', ()=>{
+      playGame('Rock');
+});
+
+document.querySelector('.js-paper-button').
+      addEventListener('click', ()=>{
+      playGame('Paper');
+});
+document.querySelector('.js-scissor-button').
+    addEventListener('click', ()=>{
+      playGame('Scissors');
+});
+
+// Displaying and updating the score
+updateScoreElement();
 
 
 
@@ -36,17 +53,16 @@ function resetScore(){
 let isAutoPlaying = false;
   let intervalId; 
 // autoplays when button autoplay is clicked
+// const autoPlay =()=>{};
+
 function autoPlay(){
-  
   // changing auto play button
   //storing button first in variable
   const autoPlayBtn = document.querySelector('.auto-play-js');
   // auto play was off befor, not it is clicked
   //check if clicked autoplay for first time
-
   if(!isAutoPlaying){
   // storing interval so that we can stop it if user wants to stop
-    
     intervalId = setInterval(()=> {
       let computerMove = pickComputerMove();
       playGame(computerMove);
@@ -61,9 +77,6 @@ function autoPlay(){
     autoPlayBtn.innerHTML = 'Auto Play';
   }
 
-
-  
- 
 }
 
 function playGame(playerMove){
